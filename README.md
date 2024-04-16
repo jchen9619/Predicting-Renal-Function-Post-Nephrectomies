@@ -4,13 +4,13 @@
 
 ## Table of Contents
 - [Abstract](#abstract)
-- [Data](#data-source) 
-- [Building Patient Cohorts]
-- [Rule-based Classification of Nephrectomies](#identification-of-top-sentiment-words)  
-- [Add comorbidities]
-- [Results]
-- [Tech Stack](#technologies)
+- [Data](#data) 
+- [Building Patient Cohorts](#building-patient-cohorts)
+- [Rule-based Classification of Nephrectomies](#Rule-based-Classification-of-Nephrectomies)  
+- [Additional Features: Demographics and Comorbidities](#Additional-Features:-Demographics-and-Comorbidities)
+- [Modeling](#modeling)
+- [Tech Stack](#tech stack)
 
 ## Abstract
 [(Back to top)](#table-of-contents)
-<br>
+
