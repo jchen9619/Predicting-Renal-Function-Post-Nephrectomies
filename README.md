@@ -7,7 +7,7 @@
 - [Data](#data) 
 - [Building Patient Cohorts](#building-patient-cohorts)
 - [Rule-based Classification of Nephrectomies](#Rule-based-Classification-of-Nephrectomies)  
-- [Additional Features: Demographics and Comorbidities](#Additional-Features:-Demographics-and-Comorbidities)
+- [Additional Features: Demographics and Comorbidities](#Additional-Features-:-Demographics-and-Comorbidities)
 - [Modeling](#modeling)
 - [Tech Stack](#tech-stack)
 
