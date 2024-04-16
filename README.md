@@ -9,7 +9,7 @@
 - [Rule-based Classification of Nephrectomies](#Rule-based-Classification-of-Nephrectomies)  
 - [Additional Features: Demographics and Comorbidities](#Additional-Features:-Demographics-and-Comorbidities)
 - [Modeling](#modeling)
-- [Tech Stack](#tech stack)
+- [Tech Stack](#tech-stack)
 
 ## Abstract
 [(Back to top)](#table-of-contents)
