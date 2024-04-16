@@ -17,7 +17,7 @@ Kidneys perform critical functions including waste filtration, drug metabolism, 
 
 ## Data
 The data were obtained from NYU Langone Health (NYULH) patient EHR records between the years 2011 and 2023. SQL was used to extract the various features from a remote data lake as demonstrated below:
-
+[features](https://github.com/jchen9619/Predicting-Renal-Function-Post-Nephrectomies/blob/main/images/features.jpg)
 
 
 ## Building Patient Cohorts
