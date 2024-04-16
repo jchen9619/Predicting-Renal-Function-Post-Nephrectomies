@@ -13,4 +13,24 @@
 
 ## Abstract
 [(Back to top)](#table-of-contents)
+dfsjkld;ajdklf;ad
 
+## Building Patient Cohorts
+[(Back to top)](#table-of-contents)
+dfsjkld;ajdklf;ad
+
+## Rule-based Classification of Nephrectomies
+[(Back to top)](#table-of-contents)
+dfsjkld;ajdklf;ad
+
+## Additional Features: Demographics and Comorbidities
+[(Back to top)](#table-of-contents)
+dfsjkld;ajdklf;ad
+
+## Modeling
+[(Back to top)](#table-of-contents)
+dfsjkld;ajdklf;ad
+
+## Tech Stack
+[(Back to top)](#table-of-contents)
+dfsjkld;ajdklf;ad
