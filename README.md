@@ -1,5 +1,6 @@
 ![MAYBE A PHOTO](https://github.com/jchen9619/Predicting-Renal-Function-Post-Nephrectomies/blob/main/images/DALL%C2%B7E%202024-04-15%2022.42.18%20-%20A%20wide%2C%20flat%20design%20digital%20illustration%20depicting%20the%20theme%20of%20kidney%20health%20research%2C%20specifically%20focusing%20on%20'Predicting%20Renal%20Function%20Post%20Nephr.webp)
 # Predicting Renal Function Post Nephrectomy for Renal Masses
+Chen Chen, Siri Desiraju, Anna Dominic, Julia Manasson
 [📊 Report](https://github.com/jchen9619/Predicting-Renal-Function-Post-Nephrectomies/blob/main/reports/Capstone_Final_Report.pdf)<br>
 [🖼️ Poster](https://github.com/jchen9619/Predicting-Renal-Function-Post-Nephrectomies/blob/main/reports/vFCapstone_poster_group_9.pdf)
 
@@ -19,25 +20,25 @@ Kidneys perform critical functions including waste filtration, drug metabolism, 
 The data were obtained from NYU Langone Health (NYULH) patient EHR records between the years 2011 and 2023. SQL was used to extract the various features from a remote data lake as demonstrated below:<br>
 ![features](https://github.com/jchen9619/Predicting-Renal-Function-Post-Nephrectomies/blob/main/images/features.webp)
 
-
 ## Building Patient Cohorts
 We used structured and unstructured electronic health record (EHR) data to construct a model that predicts eGFR and Cr two weeks post-surgery, with respective sample sizes of 549 and 764 patients. This entails an extensive filtering process as demonstrated below. 
 ![Uploading image.png…](https://github.com/jchen9619/Predicting-Renal-Function-Post-Nephrectomies/blob/main/images/capstone%20flowchart%20(1)%20(1).png)
 
-
+The baseline characteristics of patients in the the eGFR and Cr cohorts are shown in Table 1. In both cohorts, the patients were predominantly male, white, and overweight. Approximately 60% had HTN, 25-30% had DM, and 40-50% reported tobacco use.
+![](https://github.com/jchen9619/Predicting-Renal-Function-Post-Nephrectomies/blob/main/images/baseline.jpg)
+[ADD CODE]
 
 ## Rule-based Classification of Nephrectomies
-[(Back to top)](#table-of-contents)
-dfsjkld;ajdklf;ad
-
-## Additional Features: Demographics and Comorbidities
-[(Back to top)](#table-of-contents)
-dfsjkld;ajdklf;ad
+For many patients the type of nephrectomy procedure was not specified or incorrectly specified in the extracted procedure name. We therefore relied on free-form text within pathology reports to generate procedure type classifications whenever possible. First, we excluded pathology reports not associated with nephrectomies (e.g., biopsies, non-renal procedures). Next, we generated key words that were specifically associated with RN (e.g., ‘ureter’, ‘radical’, ‘total’) or PN (‘inked’, ‘partial’), and used them to classify the procedures. For individuals without corresponding pathology reports, we used the procedure name when it differentiated between partial or radical nephrectomy, having found it to be accurate in the majority of cases that were cross-referenced with pathology reports (match rates of 86% for PN and 95% for RN). Patients for whom we could not ascertain the type of nephrectomy by pathology report or procedure name were excluded. Patients with transplant kidneys or multiple nephrectomies were also excluded. 
+[ADD CODE]
 
 ## Modeling
-[(Back to top)](#table-of-contents)
-dfsjkld;ajdklf;ad
+To predict postoperative renal function, we employed both Linear Regression and XGBoost models. These models, exploring linear and non-linear relationships in demographic and clinical variables, offered insights into feature contributions. We chose MAPE (Mean Absolute Percentage Error) for its scale- independence and interpretability, as it suits the clinical context of renal failure prediction and offers a clear, understandable measure of accuracy.
+
+## Results
+[ADD CODE]
 
 ## Tech Stack
-[(Back to top)](#table-of-contents)
-dfsjkld;ajdklf;ad
+- Python
+- SQL
+
