@@ -20,6 +20,7 @@ Kidneys perform critical functions including waste filtration, drug metabolism, 
 
 ## Data
 [Sample SQL Code for EHR Extraction](https://github.com/jchen9619/Predicting-Renal-Function-Post-Nephrectomies/blob/main/Notebooks/capstone_sql_queries_20231129.ipynb)
+
 The data were obtained from NYU Langone Health (NYULH) patient EHR records between the years 2011 and 2023. SQL was used to extract the various features from a remote data lake as demonstrated below:<br>
 ![features](https://github.com/jchen9619/Predicting-Renal-Function-Post-Nephrectomies/blob/main/images/features.webp)
 
@@ -35,10 +36,12 @@ The baseline characteristics of patients in the the eGFR and Cr cohorts are show
 
 ## Rule-based Classification of Nephrectomies
 [Rule-based Classification of Nephrectomies Notebook](https://github.com/jchen9619/Predicting-Renal-Function-Post-Nephrectomies/blob/main/Notebooks/Classify%20partial%20vs%20radical%20.ipynb)
+
 For many patients the type of nephrectomy procedure was not specified or incorrectly specified in the extracted procedure name. We therefore relied on free-form text within pathology reports to generate procedure type classifications whenever possible. First, we excluded pathology reports not associated with nephrectomies (e.g., biopsies, non-renal procedures). Next, we generated key words that were specifically associated with RN (e.g., ‘ureter’, ‘radical’, ‘total’) or PN (‘inked’, ‘partial’), and used them to classify the procedures. For individuals without corresponding pathology reports, we used the procedure name when it differentiated between partial or radical nephrectomy, having found it to be accurate in the majority of cases that were cross-referenced with pathology reports (match rates of 86% for PN and 95% for RN). Patients for whom we could not ascertain the type of nephrectomy by pathology report or procedure name were excluded. Patients with transplant kidneys or multiple nephrectomies were also excluded. <br> 
 
 ## Modeling
-[Modeling Notebook](https://github.com/jchen9619/Predicting-Renal-Function-Post-Nephrectomies/blob/main/Notebooks/baselinemodels_creat.ipynb) 
+[Modeling Notebook](https://github.com/jchen9619/Predicting-Renal-Function-Post-Nephrectomies/blob/main/Notebooks/baselinemodels_creat.ipynb)
+
 To predict postoperative renal function, we employed both Linear Regression and XGBoost models. These models, exploring linear and non-linear relationships in demographic and clinical variables, offered insights into feature contributions. We chose MAPE (Mean Absolute Percentage Error) for its scale- independence and interpretability, as it suits the clinical context of renal failure prediction and offers a clear, understandable measure of accuracy. <br>
 
 
